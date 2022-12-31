@@ -1,21 +1,22 @@
-interface Contact {
-    id: number;
-    name: ContactName;
-    birthDate?: Date;
-    status: ContactStatus;
+// enum
+enum ContactStatus {
+  Active = "active",
+  Inactive = "inactive",
+  New = "new",
 }
 
-enum ContactStatus {
-    Active = "active",
-    Inactive = "inactive",
-    New = "new"
+interface Contact {
+  id: number;
+  name: ContactName;
+  birthDate?: Date;
+  status: ContactStatus;
 }
 
 let primaryContact: Contact = {
-    birthDate: new Date("01-01-1980"),
-    id: 12345,
-    name: "Jamie Johnson",
-    status: ContactStatus.Active
-}
+  birthDate: new Date("01-01-1980"),
+  id: 12345,
+  name: "Jamie Johnson",
+  status: ContactStatus.Active,
+};
 
-type ContactName = string
+type ContactName = string;

@@ -1,8 +1,9 @@
-let x: number
-let y: string
-let z: boolean
-let a: Date
-let b: string[]
+let x: number;
+let y: string;
+let z: boolean;
+let a: Date;
+let b: string[];
 
-b = "Hello!" as any
-b = 1234
+// type casting instead of any type
+b = "Hello!" as any;
+// b = 1234; => error
