@@ -1,5 +1,5 @@
 class Contact {
-    id;
-    name;
-    birthDate;
+  id;
+  name;
+  birthDate;
 }
